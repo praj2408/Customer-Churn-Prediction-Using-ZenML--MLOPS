@@ -10,3 +10,7 @@ To achieve this in a real-world scenario, we will be using ZenML to build a prod
 - By offering you a framework or template to develop within.
 - By integrating with popular and useful tools like Kubeflow, Seldon Core, facets, and more.
 - By allowing you to build and deploy your machine learning pipelines easily using a modern MLOps framework.
+
+
+## Dataset
+https://www.kaggle.com/datasets/blastchar/telco-customer-churn?datasetId=13996&sortBy=voteCount
