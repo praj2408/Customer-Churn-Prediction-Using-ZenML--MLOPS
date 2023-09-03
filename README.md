@@ -15,6 +15,26 @@ To achieve this in a real-world scenario, we will be using ZenML to build a prod
 ## Dataset
 https://www.kaggle.com/datasets/blastchar/telco-customer-churn?datasetId=13996&sortBy=voteCount
 
+
+
+## Python Requirements
+Let's jump into the Python packages you need. Within the Python environment of your choice, run:
+```bash
+git clone https://github.com/zenml-io/zenml-projects.git
+cd zenml-projects/customer-satisfaction
+pip install -r requirements.txt
+```
+Starting with ZenML 0.20.0, ZenML comes bundled with a React-based dashboard. This dashboard allows you to observe your stacks, stack components and pipeline DAGs in a dashboard interface. To access this, you need to launch the ZenML Server and Dashboard locally, but first you must install the optional dependencies for the ZenML server:
+```bash
+pip install zenml["server"]
+zenml up
+```
+
+If you are running the run_deployment.py script, you will also need to install some integrations using ZenML:
+```bash
+zenml integration install mlflow -y
+```
+
 ## Requirements
 ## Experiments
 ## Contributions
