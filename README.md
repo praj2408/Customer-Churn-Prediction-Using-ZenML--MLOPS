@@ -72,10 +72,26 @@ service = prediction_service_loader(
 ...
 service.predict(...)  # Predict on incoming data from the application
 ```
-## Requirements
-## Experiments
-## Contributions
 
+While this ZenML Project trains and deploys a model locally, other ZenML integrations such as the Seldon deployer can also be used in a similar manner to deploy the model in a more production setting (such as on a Kubernetes cluster). We use MLflow here for the convenience of its local deployment.
+![](https://github.com/ayush714/customer-satisfaction-mlops/blob/main/_assets/training_and_deployment_pipeline_updated.png?raw=true)
+
+## Diving into the code
+You can run two pipelines as follows:
+
+- Training pipeline:
+```bash
+python run_pipeline.py
+```
+- The continuous deployment pipeline:
+```bash
+python run_deployment.py
+```
+## Demo Streamlit App
+There is a live demo of this project using Streamlit which you can find here. It takes some input features for the product and predicts the customer satisfaction rate using the latest trained models. If you want to run this Streamlit app in your local system, you can run the following command:-
+```bash
+streamlit run streamlit_app.py
+```
 
 
 
