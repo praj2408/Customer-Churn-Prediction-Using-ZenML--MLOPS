@@ -3,6 +3,10 @@ pandas
 numpy
 matplotlib
 seaborn
+#zenml["server"]
+joblib
+streamlit
+zenml
 
 
 
