@@ -15,9 +15,15 @@ To achieve this in a real-world scenario, we will be using ZenML to build a prod
 ## Dataset
 https://www.kaggle.com/datasets/blastchar/telco-customer-churn?datasetId=13996&sortBy=voteCount
 
+<<<<<<< HEAD
 ## Python Requirements
 pip install zenml["server"]
 
 zenml init
 ## Experiments
+=======
+## Python requirements
+>>>>>>> 766b011a70f01ca964c28eae935cc8975fe33532
 ## Contributions
+## License
+
