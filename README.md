@@ -17,13 +17,19 @@ https://www.kaggle.com/datasets/blastchar/telco-customer-churn?datasetId=13996&s
 
 <<<<<<< HEAD
 ## Python Requirements
+```bash
 pip install zenml["server"]
-
+```
+```bash
 zenml init
+```
+
+
+
 ## Experiments
-=======
+
 ## Python requirements
->>>>>>> 766b011a70f01ca964c28eae935cc8975fe33532
+
 ## Contributions
 ## License
 
