@@ -87,3 +87,15 @@ class DataCleaning():
     def __init__(self, data: pd.DataFrame, strategy: DataStrategy) -> None:
         self.data = data
         self.strategy = strategy
+        
+    def handle_data(self)-> Union[pd.DataFrame, pd.Series]:
+        """
+        Handle the data
+        Returns:
+            Union[pd.DataFrame, pd.Series]: _description_
+        """
+        
+        try:
+            return self.strategy.handle_data(self.data)
+        except Exception as e:
+            raise e
