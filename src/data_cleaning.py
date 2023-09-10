@@ -53,7 +53,6 @@ class DataPreProcessStrategy(DataStrategy):
             data.Contract = le.fit_transform(data.Contract)
             data.PaymentMethod = le.fit_transform(data.PaymentMethod)
             data.Churn = le.fit_transform(data.Churn)
-            print(data)
             return data
     except Exception as e: 
         raise e
@@ -99,3 +98,5 @@ class DataCleaning():
             return self.strategy.handle_data(self.data)
         except Exception as e:
             raise e
+        
+
