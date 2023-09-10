@@ -24,6 +24,6 @@ def train_model(
 
     """
     model = None
-    if config.model
+    if config.model  
 
 
