@@ -4,13 +4,14 @@ import pandas as pd
 from zenml import step
 from src.model_dev import LogisticRegressionModel
 from sklearn.base import ClassifierMixin
-import config 
+from .config import ModelNameConfig
 @step
 def train_model(
     X_train: pd.DataFrame,
     X_test: pd.DataFrame,
     y_train: pd.Series,
-    y_test: pd.Series) -> ClassifierMixin:
+    y_test: pd.Series,
+    config: ModelNameConfig) -> ClassifierMixin:
     
     """
     Trains the model on the ingested data
