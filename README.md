@@ -1,6 +1,4 @@
 # Customer-Churn-Prediction-Using-ZenML in progress
-
- 
 ## Problem statement: 
 For a given customer's historical data, we are asked to predict whether a customer will stop using a company's product or not. We will be using the Telco Customer Churn dataset for building an end to end production-grade machine learning system that can predict whether the customer will stay loyal or not. The dataset has 20 input features and a target variable for 7043 customers.
 
@@ -24,10 +22,6 @@ pip install zenml["server"]
 ```bash
 zenml init
 ```
-
-
-
-
 ## Experiments
 
 ## Python requirements
